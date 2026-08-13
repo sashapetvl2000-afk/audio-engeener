@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Engineer Trainer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div>
+        <p class="eyebrow">AUDIO ENGINEER TRAINER</p>
+        <h1>Frequency Cut</h1>
+        <p class="subtitle">Услышь, какая частота была вырезана из сигнала.</p>
+      </div>
+      <div class="score-card">
+        <span>Счёт</span>
+        <strong id="score">0 / 0</strong>
+      </div>
+    </header>
+
+    <section class="panel">
+      <div class="status-row">
+        <span id="round">Раунд 1</span>
+        <span id="difficulty">Easy</span>
+      </div>
+
+      <div class="visual">
+        <div class="visual-center">
+          <div class="speaker-icon">◉</div>
+          <p id="status">Нажми «Воспроизвести»</p>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="playBtn" class="primary">▶ Воспроизвести</button>
+        <button id="replayBtn" class="secondary" disabled>↻ Повторить</button>
+      </div>
+
+      <div class="question">
+        <h2>Какая частота была вырезана?</h2>
+        <p>Слушай уровень сигнала, затем выбери наиболее близкий вариант.</p>
+
+        <div id="answers" class="answers"></div>
+      </div>
+
+      <div id="result" class="result hidden"></div>
+
+      <button id="nextBtn" class="next" disabled>Следующее задание →</button>
+    </section>
+
+    <section class="info">
+      <div>
+        <span>Текущий режим</span>
+        <strong>EQ · Bell Cut</strong>
+      </div>
+      <div>
+        <span>Диапазон</span>
+        <strong>80 Hz — 12 kHz</strong>
+      </div>
+      <div>
+        <span>Глубина среза</span>
+        <strong>−4…−7 dB</strong>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
